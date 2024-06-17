@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>CargaSSIS</Name>
-    <LastWriteTime>2024-06-14T03:37:08.8850638Z</LastWriteTime>
+    <LastWriteTime>2024-06-17T02:51:35.4828421Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>LoadDW.dtsx</Name>
-      <LastWriteTime>2024-06-17T02:33:21.6587262Z</LastWriteTime>
+      <LastWriteTime>2024-06-17T02:51:35.4846284Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>importXML.dtsx</Name>
-      <LastWriteTime>2024-06-17T02:23:50.0056223Z</LastWriteTime>
+      <LastWriteTime>2024-06-17T03:02:44.2443475Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
