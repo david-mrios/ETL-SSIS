@@ -49,7 +49,7 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 
 - Si las direcciones del archivo XML de origen no presentan problemas, procederé a ejecutar el paquete de importación XML para rellenar el dll.
 
-- En caso de que falle la importación XML, eliminaré la base de datos "TecnoNic.bak" y restauraré el archivo .bak desde la carpeta de respaldo completa. 
+- En caso de que falle la importación XML, eliminaré la base de datos "TecnoNic.bak" y restauraré el archivo TecnoNic.bak desde la carpeta de backup full. 
 
 - Finalmente, ejecutaré el paquete load_Dw para completar el proceso ETL.
 
