@@ -1,8 +1,7 @@
 
-# Hello SSIS
+# ETL - SSIS
 
 SSIS es una plataforma para la creación de soluciones de integración de datos, como la migración de datos, la transformación de datos y la carga de datos (ETL - Extract, Transform, Load). Se utiliza principalmente en Visual Studio con SQL Server para diseñar y gestionar flujos de trabajo y tareas de integración de datos.
-
 
 ## Funciones y Usos Principales de SSIS
 
@@ -32,12 +31,24 @@ Sigue estos pasos para instalar y configurar Hello SSIS en tu entorno local:
 
 1. Clona el repositorio  desde GitHub:
 ```bash 
-git clone https://github.com/SrDavidAntonio2003/SSIS.git
+git clone https://github.com/david-mrios/ETL-SSIS.git
 ```
+2. Recomendación:
+
+    -  Realizar la instalación en la raiz del disco local C:\ 
+
+    - Si se elige otra dirección, en el paquete importXML deberá cambiar la ubicación de cada flujo de tarea. Dentro del paquete, en el origen XML, es necesario ajustar tanto la ubicación del XML como del XSD correspondiente al nuevo destino de datos que se encuentra en la carpeta data.
+
+    - Si lo descarga directamente sin clonarlo, enfrentará el mismo error de ubicación dentro del import XML, ya que al no clonarlo se cambia el nombre de la carpeta.
 
 ## Ejecución
 
-- Crea la base de datos "SSISIntro" en SQL Server Management Studio (SSMS).
-- Verifica las conexiones a la base de datos.
-- Revisa las rutas de la carpeta de datos en el flujo de trabajo, especialmente en la herramienta denominada "Origen XML".
-- Ejecuta primero el paquete llamado "CreateTableBD" y luego "ImportarXMLFile".
+- Restaurar las bases de datos "TecnoNic.bak" y "TecnoNic_DW.bak" en SQL Server Management Studio (SSMS), ten en cuenta que estas solo contienen la estructura.
+
+- Verifica las conexiones a la base de datos. Aunque dejamos la conexión con localhost, así que no debería haber ningún problema. En caso de necesidad, modifica las conexiones a la base de datos.
+
+- Si las direcciones del archivo XML de origen no presentan problemas, procederé a ejecutar el paquete de importación XML para rellenar el dll.
+
+- En caso de que falle la importación XML, eliminaré la base de datos "TecnoNic.bak" y restauraré el archivo .bak desde la carpeta de respaldo completa. 
+
+- Finalmente, ejecutaré el paquete load_Dw para completar el proceso ETL.
