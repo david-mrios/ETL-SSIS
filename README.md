@@ -52,3 +52,8 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 - En caso de que falle la importación XML, eliminaré la base de datos "TecnoNic.bak" y restauraré el archivo .bak desde la carpeta de respaldo completa. 
 
 - Finalmente, ejecutaré el paquete load_Dw para completar el proceso ETL.
+
+## Visita el repositorio para obtener más información sobre la creación del ETL en SQL Server: "
+
+[ETL SQL SERVER](https://github.com/david-mrios/ETL-SQL-SERVER.git)
+
