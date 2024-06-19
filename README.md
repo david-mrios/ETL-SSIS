@@ -53,7 +53,7 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 
 - Finalmente, ejecutaré el paquete load_Dw para completar el proceso ETL.
 
-## Visita el repositorio para obtener más información sobre la creación del ETL en SQL Server: "
+## Visita el repositorio para obtener más información sobre la creación del ETL en SQL Server: 
 
 [ETL SQL SERVER](https://github.com/david-mrios/ETL-SQL-SERVER.git)
 
