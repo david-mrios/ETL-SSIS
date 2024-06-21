@@ -11,8 +11,8 @@
   DTS:LocaleID="19466"
   DTS:ObjectName="LoadDW"
   DTS:PackageType="5"
-  DTS:VersionBuild="84"
-  DTS:VersionGUID="{1315B783-FA9A-499D-836F-8AB07D56022E}">
+  DTS:VersionBuild="86"
+  DTS:VersionGUID="{B3975A67-3AC6-4BAE-AD30-C1D9C72152C4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -2271,12 +2271,6 @@ WITH RESULT SETS
                           externalMetadataColumnId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Estado]"
                           lineageId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Estado]" />
                         <inputColumn
-                          refId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Fecha Pedido]"
-                          cachedDataType="dbTimeStamp"
-                          cachedName="Fecha Pedido"
-                          externalMetadataColumnId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fecha Pedido]"
-                          lineageId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fecha Pedido]" />
-                        <inputColumn
                           refId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Valid From]"
                           cachedDataType="dbTimeStamp"
                           cachedName="Valid From"
@@ -2325,10 +2319,6 @@ WITH RESULT SETS
                           dataType="wstr"
                           length="100"
                           name="Estado" />
-                        <externalMetadataColumn
-                          refId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Fecha Pedido]"
-                          dataType="dbTimeStamp"
-                          name="Fecha Pedido" />
                         <externalMetadataColumn
                           refId="Package\Load Dim Pedido\DF Populate Staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Valid From]"
                           dataType="dbTimeStamp"
@@ -6219,9 +6209,9 @@ WITH RESULT SETS
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="False"
+          IsExpanded="True"
           PanelSize="764,313"
-          Size="764,43"
+          Size="764,356"
           Id="Package\Load Fact Table Envios"
           TopLeft="557.031746031746,550.904761904763" />
         <NodeLayout
@@ -6857,54 +6847,60 @@ WITH RESULT SETS
     design-time-name="Package\Load Fact Table Envios\DF Populate Staging">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="177,42"
-          Id="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Destination"
-          TopLeft="321.5,231.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="157,42"
           Id="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Source"
-          TopLeft="137.5,170.5" />
+          TopLeft="65.5,65.5" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Destination"
+          TopLeft="238.5,242.5" />
         <EdgeLayout
           Id="Package\Load Fact Table Envios\DF Populate Staging.Paths[OLE DB Source Output]"
-          TopLeft="294.5,191.5">
+          TopLeft="144,107.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27,61"
+              EndConnector="183,135"
               Start="0,0"
-              End="19.5,61">
+              End="183,127.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="9.5,0" />
+                    End="0,63.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="9.5,0"
-                    Point2="13.5,0"
-                    Point3="13.5,4" />
+                    Point1="0,63.5"
+                    Point2="0,67.5"
+                    Point3="4,67.5" />
                   <mssgle:LineSegment
-                    End="13.5,57" />
+                    End="179,67.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="13.5,57"
-                    Point2="13.5,61"
-                    Point3="17.5,61" />
+                    Point1="179,67.5"
+                    Point2="183,67.5"
+                    Point3="183,71.5" />
                   <mssgle:LineSegment
-                    End="19.5,61" />
+                    End="183,127.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Destination">
     <Properties>
@@ -6915,14 +6911,6 @@ WITH RESULT SETS
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Fact Table Envios\DF Populate Staging\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
