@@ -1,9 +1,28 @@
+<div align="center">
 
 # ETL - SSIS
 
-SSIS es una plataforma para la creación de soluciones de integración de datos, como la migración de datos, la transformación de datos y la carga de datos (ETL - Extract, Transform, Load). Se utiliza principalmente en Visual Studio con SQL Server para diseñar y gestionar flujos de trabajo y tareas de integración de datos.
+## Hecho por:
+
+<br/>
+
+<p> <strong> 1. Carlos Manuel Vargas López. </strong></p>
+<p> <strong> 2. Iris Violeta Talavera. </strong></p>
+<p> <strong> 3. David Antonio Membreño Ríos. </strong></p>
+<p> <strong> 4. Jocsan Stiven Mejía Villereal. </strong></p>
+<p> <strong> 5. Jether Alejandro Martínez Solís. </strong></p>
+
+<br/>
+
+<p align="center">
+  <img src="https://th.bing.com/th/id/OIP.wp7VLwfL8Z8gsOHP1J3i8wHaEn?rs=1&pid=ImgDetMain" alt="Texto alternativo" width="400">
+</p>
+
+</div>
 
 ## Funciones y Usos Principales de SSIS
+
+SSIS es una plataforma para la creación de soluciones de integración de datos, como la migración de datos, la transformación de datos y la carga de datos (ETL - Extract, Transform, Load). Se utiliza principalmente en Visual Studio con SQL Server para diseñar y gestionar flujos de trabajo y tareas de integración de datos.
 
 - **Extracción de Datos**: SSIS puede extraer datos desde una variedad de fuentes, incluyendo bases de datos SQL Server, archivos planos, archivos XML, bases de datos de otros sistemas, servicios web, y más.
 
