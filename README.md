@@ -58,7 +58,7 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 
     - Si se elige otra dirección, en el paquete importXML deberá cambiar la ubicación de cada flujo de tarea. Dentro del paquete, en el origen XML, es necesario ajustar tanto la ubicación del XML como del XSD correspondiente al nuevo destino de datos que se encuentra en la carpeta data.
 
-    - Si lo descarga directamente sin clonarlo, enfrentará el mismo error de ubicación dentro del import XML, ya que al no clonarlo se cambia el nombre de la carpeta.
+    - Si lo descarga directamente sin clonarlo, enfrentará el mismo error de ubicación dentro del import XML, ya que al no clonarlo se cambia el nombre de la carpeta. 
 
 ## Ejecución
 
@@ -73,6 +73,10 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 - En caso de que falle la importación XML, eliminaré la base de datos "TecnoNic.bak" y restauraré el archivo TecnoNic.bak desde la carpeta de backup full. 
 
 - Finalmente, ejecutaré el paquete load_Dw para completar el proceso ETL.
+
+## Advertencia
+
+- Si la ejecución es exitosa, se podrá visualizar el campo "ubicacionKey" de "factTable" con algunos valores en 0. Esto se debe a la modificación del campo "modifiedDate" en la base de datos relacional, para poder manejar valores cuando no coinciden con las fechas.
 
 ## Visita el repositorio para obtener más información sobre la creación del ETL en SQL Server: 
 
