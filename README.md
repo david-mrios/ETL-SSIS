@@ -64,6 +64,8 @@ git clone https://github.com/david-mrios/ETL-SSIS.git
 
 - Restaurar las bases de datos "TecnoNic.bak" y "TecnoNic_DW.bak" de la carpeta **backup schema** en SQL Server Management Studio (SSMS), ten en cuenta que estas solo contienen la estructura.
 
+- El proyecto SSIS se encuentra en la carpeta code.
+
 - Verifica las conexiones a la base de datos. Aunque dejamos la conexión con localhost, así que no debería haber ningún problema. En caso de necesidad, modifica las conexiones a la base de datos.
 
 - Si las direcciones del archivo XML de origen no presentan problemas, procederé a ejecutar el paquete de importación XML para rellenar el dll.
